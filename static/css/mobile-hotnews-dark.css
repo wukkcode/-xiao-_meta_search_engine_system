@@ -1,0 +1,192 @@
+ * {
+     transition: all 0.1s ease 0s;
+ }
+
+ body {
+     margin: 0 auto;
+     background-color: #1c1c20;
+     width: 95%;
+     color: #DCDCE0;
+ }
+
+ a {
+     color: #DCDCE0;
+ }
+
+ /* 头部样式 */
+
+ .header {
+     margin: 10px auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 30px;
+     width: 100%;
+ }
+
+ .header .theme-switcher {
+     position: relative;
+     display: flex;
+     height: 24px;
+     width: 44px;
+     background-color: #555555;
+     border-radius: 22px;
+     align-items: center;
+     transition: all 0.7s ease 0s;
+     box-shadow: 0 0 0 1px rgb(0 0 0 / 5%), 0 2px 3px 0 rgb(0 0 0 / 10%);
+ }
+
+ .header .theme-switcher .theme-circle {
+     position: absolute;
+     height: 16px;
+     width: 16px;
+     border-radius: 50%;
+     background-color: #ffffff;
+     transition: all 0.7s ease 0s;
+     left: 0px;
+     box-shadow: 0 0 0 1px rgb(0 0 0 / 5%), 0 2px 3px 0 rgb(0 0 0 / 10%);
+ }
+
+ /* 今日样式 */
+
+ .today {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-bottom: 5px;
+     border-bottom: 1px solid #555555;
+ }
+
+ .today .weather-date {
+     display: flex;
+     align-items: center;
+ }
+
+ .today .weather-date .date-box {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 50px;
+     height: 50px;
+     background-color: #ffe02d;
+     border-radius: 10px;
+     box-shadow: 0 0 0 1px rgb(0 0 0 / 5%), 0 2px 3px 0 rgb(0 0 0 / 10%);
+     color: #666;
+ }
+
+ .today .weather-date .date-box .day-date {
+     font-size: 15px;
+ }
+
+ .today .weather-date .weather-box {
+     margin-left: 20px;
+     font-size: 12px;
+ }
+
+ .today .time {
+     align-self: flex-end;
+ }
+
+ /* 新闻内容样式 */
+
+ .content {
+     margin-top: 20px;
+ }
+
+ .content li {
+     display: flex;
+     align-items: center;
+     min-width: 100%;
+     background-color: #2c2c30;
+     border-radius: 10px;
+     padding: 5px;
+     box-shadow: 0 0 0 1px rgb(0 0 0 / 5%), 0 2px 3px 0 rgb(0 0 0 / 10%);
+     margin-bottom: 10px;
+     overflow: hidden;
+ }
+
+ .content li .rank {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-width: 13%;
+     height: 40px;
+     font-size: 25px;
+     border-right: 1px solid #555555;
+     margin-right: 10px;
+ }
+
+ .content li .news {}
+
+ .content li .news .news-title {
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 18px;
+     min-height: 36px;
+ }
+
+ .content li .news .news-title a {
+     text-overflow: -o-ellipsis-lastline;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     display: -webkit-box;
+     -webkit-line-clamp: 2;
+     line-clamp: 2;
+     -webkit-box-orient: vertical;
+ }
+
+ .content li .news .news-about {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     margin-top: 15px;
+     min-width: 278px;
+ }
+
+ .content li .news .news-about .news-fever, .news-from {
+     font: size 12px;
+ }
+
+ .content li .news .news-about .news-fever {
+     background-color: #444444;
+     color: #fe7271;
+     padding: 0 5px 0;
+     border-radius: 4px;
+ }
+
+ .content li .news .news-about .news-from a {
+     color: #4e80ed;
+ }
+
+ /* 切换按钮 */
+
+ .next {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: fixed;
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     background-color: #555555;
+     bottom: 5%;
+     left: 50%;
+     margin-left: -25px;
+     box-shadow: 0 0 0 1px rgb(0 0 0 / 5%), 0 2px 3px 0 rgb(0 0 0 / 10%);
+     font-size: 25px;
+     font-weight: 700;
+     cursor: pointer;
+     color: #fffffd;
+     font-weight: 1000;
+ }
+
+ /* 底部样式 */
+
+ .footer {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     width: 100%;
+     margin: 10px auto;
+ }

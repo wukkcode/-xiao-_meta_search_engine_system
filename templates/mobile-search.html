@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" href="/static/logo.ico" type="image/x-icon">
+    <title>晓</title>
+    <link rel="stylesheet" href="/static/css/normalize.css">
+    <!-- <link rel="stylesheet" href="css/base.css"> -->
+    <link rel="stylesheet" href="/static/css/mobile-search-white.css" id="style-switch">
+</head>
+
+<body>
+    <header class="header">
+        <p class="weather">晴 | 9:00</p>
+        <a href="/mobile_app/"><h1 class="logo">XIAO[S]</h1></a>
+        <div class="theme-switcher">
+            <div class="theme-circle">
+            </div>
+        </div>
+    </header>
+    <div class="search-object">
+        <input type="text" class="search-input" placeholder="你的问题 / 知识获取" value="">
+        <button class=search-button>搜索</button>
+    </div>
+    <ul class="search-type">
+        <li><span><a href="/mobile/">必应</a></span></li>
+        <li><span>百度</span></li>
+        <li><span>谷歌</span></li>
+        <li><span>搜狗</span></li>
+        <li><span>360</span></li>
+    </ul>
+
+    <ul class="search-result">
+    </ul>
+    <div class="next">下一页</div>
+    <div class="footer">
+        <p>© 2021 看山学长 | </p>
+        <a href="#">&nbsp;关于</a>
+    </div>
+    <script src="/static/js/mobile-search.js"></script>
+</body>
+
+</html>

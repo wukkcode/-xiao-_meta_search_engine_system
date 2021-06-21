@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" href="/static/logo.ico" type="image/x-icon">
+    <title>晓译</title>
+    <link rel="stylesheet" href="/static/css/normalize.css">
+    <!-- <link rel="stylesheet" href="css/base.css"> -->
+    <link rel="stylesheet" href="/static/css/mobile-translate-white.css" id="style-switch" id="style-switch">
+</head>
+
+<body>
+    <header class="header">
+        <p class="weather">晴 | 9:00</p>
+        <a href="/mobile_app/">
+            <h1 class="logo">XIAO[T]</h1>
+        </a>
+        <div class="theme-switcher">
+            <div class="theme-circle">
+            </div>
+        </div>
+    </header>
+    <div class="translate-object">
+        <input type="text" class="translate-input" placeholder="中文 / 英文" value="" autofocus="autofocus">
+        <button class=translate-button>翻译</button>
+    </div>
+    <ul class="translate-type">
+        <li><span>谷歌</span></li>
+        <li><span>微软</span></li>
+        <li><span>阿里</span></li>
+        <li><span>百度</span></li>
+        <li><span>腾讯</span></li>
+        <li><span>有道</span></li>
+        <li><span>deepl</span></li>
+    </ul>
+    <ul class="translate-result">
+    </ul>
+    <div class="clear-all">清空</div> 
+    <div class="footer">
+        <p>© 2021 开发者武轲 | </p>
+        <a href="#">&nbsp;关于</a>
+    </div>
+    <script src="/static/js/mobile-translate.js"></script>
+</body>
+
+</html>

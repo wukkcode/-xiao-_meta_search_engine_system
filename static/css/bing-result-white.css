@@ -1,0 +1,176 @@
+* {
+    transition: all 0.7s ease 0s;
+}
+
+.all {
+    width: 90%;
+    margin: 0px auto;
+}
+
+/* 头部样式 */
+
+.header {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #fff;
+    z-index: 5;
+}
+
+.header .search-about {
+    position: relative;
+    width: 50%;
+    max-width: 90%;
+    margin-left: 20px;
+}
+
+.header .search-about .search-object {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 20px 0;
+    height: 40px;
+}
+
+.header .search-about .logo {
+    font-size: 18px;
+    margin-right: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.header .search-about .search-object .search-input {
+    width: 80%;
+    background-color: #f5f5f5;
+    padding-left: 10px;
+    color: #555555;
+}
+
+.header .search-about .search-object .search-input:focus {
+    outline: none;
+}
+
+.header .search-about .search-object .search-button {
+    width: 15%;
+    background-color: #444444;
+    color: #fff;
+}
+
+.header .search-about .search-object .search-button:focus {
+    outline: none;
+}
+
+.header .search-about .search-type {
+    display: flex;
+    margin-left: 80px;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.header .search-about .search-type li span {
+    font-size: 15px;
+    padding-bottom: 11px;
+}
+
+.header .search-about .search-type li:last-child span:hover {
+    border-bottom: 2px solid #f07c82;
+    cursor: pointer;
+    transition: none;
+}
+
+.header .search-about .search-type li span:hover {
+    transition: none;
+    border-bottom: 2px solid #555555;
+    cursor: pointer;
+}
+
+.search-about .search-type li:nth-child(7) span:hover {
+    border-bottom: none;
+    transition: none;
+}
+
+.header .action-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.header .action-about .theme-switcher {
+    position: relative;
+    display: flex;
+    height: 24px;
+    width: 44px;
+    background-color: #e0e0e0;
+    border-radius: 22px;
+    align-items: center;
+    transition: all 1s ease 0s;
+}
+
+.header .action-about .theme-switcher .theme-circle {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #555555;
+    transition: all 0.7s ease 0s;
+    left: 0px;
+}
+
+.header .action-about .login {}
+
+/* 页面内容 */
+
+.content {
+    margin-top: 150px;
+    margin-left: 20px;
+}
+
+.content .left {
+    width: 60%;
+}
+
+.content .left .search-result {
+    width: 97%;
+}
+
+.content .left .search-result ul {}
+
+.content .left .search-result ul li {
+    margin-bottom: 30px;
+}
+
+.content .left .search-result ul li>cite {
+    color: #78787C;
+    display: block;
+    max-width: 400px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.content .left .search-result ul li h2 {
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.content .left .search-result ul li h2 a {
+    color: #1070EC;
+}
+
+.content .left .search-result ul li :nth-child(3) {
+    max-width: 87%;
+}
+
+.content .left .search-result #next, #previous {
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 60px;
+    height: 30px;
+    background-color: #f5f5f5;
+    color: #666;
+}

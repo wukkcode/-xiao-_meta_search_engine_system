@@ -1,0 +1,103 @@
+/* 头部样式 */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 40px;
+}
+
+.header .home {}
+
+.header .theme-switcher {
+    position: relative;
+    display: flex;
+    height: 24px;
+    width: 44px;
+    background-color: #e0e0e0;
+    border-radius: 22px;
+    align-items: center;
+    transition: all 0.7s ease 0s;
+}
+
+.header .theme-switcher .theme-circle {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #555555;
+    transition: all 0.7s ease 0s;
+    left: 0px;
+}
+
+/* 内容 */
+
+.content {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.content .login-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 450px;
+}
+
+.content .login-box h2 {
+    margin-top: 40px;
+}
+
+.content .login-box form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 70%;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.content .login-box form .username {
+    width: 40%;
+    padding-left: 2px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #555;
+    font-size: 16px;
+
+}
+
+.content .login-box form .password {
+    width: 40%;
+    padding-left: 2px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #555;
+    font-size: 16px;
+}
+
+.content .login-box form .submit-button {
+    display: block;
+    width: 50px;
+    height: 30px;
+    background-color: #555;
+    cursor: pointer;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.content .login-box form .tips span {
+    display: inline-block;
+    color: #fff;
+    padding: 0 5px 0 5px;
+    background-color: #555;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 3px;
+}

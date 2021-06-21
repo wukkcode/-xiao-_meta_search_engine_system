@@ -1,0 +1,137 @@
+/* 头部样式 */
+
+* {
+    font-family: "Microsoft YaHei";
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 20px 0 20px;
+}
+
+.header .logo {
+    cursor: pointer;
+}
+
+.header .one-poem {
+    font-size: 16px;
+}
+
+.header .theme-switcher {
+    position: relative;
+    display: flex;
+    height: 24px;
+    width: 44px;
+    background-color: #e0e0e0;
+    border-radius: 22px;
+    align-items: center;
+    transition: all 0.7s ease 0s;
+}
+
+.header .theme-switcher .theme-circle {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #555555;
+    transition: all 0.7s ease 0s;
+    left: 0px;
+}
+
+/* 欢迎语 */
+
+.hello {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.hello span {
+    cursor: pointer;
+    color: #f07c82;
+}
+
+/* 内容 */
+
+.content {
+    margin-top: 50px;
+}
+
+.content .translate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .translate .translate-type {
+    display: flex;
+}
+
+.content .translate .translate-type li {
+    padding-right: 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.content .translate .translate-type li:hover {
+    color: #f07c82;
+}
+
+.content .translate .translate-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 800px;
+    height: 400px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.content .translate .translate-box .left, .right {
+    width: 45%;
+    height: 100%;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    font-size: 25px;
+    border-radius: 10px;
+    font-family: "Microsoft YaHei";
+}
+
+.content .translate .translate-box .translate-button {
+    height: 10%;
+    width: 50px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    color: #666;
+    border: 1px solid #cccccc;
+    font-size: 16px;
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+    font-size: 12px;
+}
+
+.footer .links {}
+
+.footer .links ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.footer .links ul li {
+    margin-right: 10px;
+}

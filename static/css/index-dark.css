@@ -1,0 +1,187 @@
+* {
+    transition: all 0.7s ease 0s;
+}
+
+body {
+    background-color: #2d2d31;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* 头部样式 */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 40px;
+}
+
+.header .weather {
+    color: #fafaff;
+}
+
+.header .theme-switcher {
+    position: relative;
+    display: flex;
+    height: 24px;
+    width: 44px;
+    background-color: #555555;
+    border-radius: 22px;
+    align-items: center;
+    transition: all 1s ease 0s;
+}
+
+.header .theme-switcher .theme-circle {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    transition: all 0.7s ease 0s;
+    left: 0px;
+}
+
+/* 内容样式 */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto 0;
+    width: 100%;
+}
+
+.content .logo {
+    font-size: 50px;
+    color: #fafaff;
+    cursor: pointer;
+    letter-spacing: 3px;
+}
+
+.content .search-about {
+    margin-top: 70px;
+    width: 40%;
+    max-width: 90%;
+}
+
+.content .search-about .search-type {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.content .search-about .search-type li {}
+
+.content .search-about .search-type li span {
+    font-size: 15px;
+    padding-bottom: 11px;
+    color: #fafaff;
+}
+
+.content .search-about .search-type li span:hover {
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+    transition: none;
+}
+
+.content .search-about .search-type li:nth-child(7) span:hover {
+    border-bottom: none;
+    transition: none;
+}
+
+.content .search-about .search-type li:last-child span:hover {
+    border-bottom: 2px solid #f07c82;
+    cursor: pointer;
+    transition: none;
+}
+
+.content .search-about .search-object {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 40px;
+}
+
+.content .search-about .search-object .search-input {
+    width: 80%;
+    background-color: #f5f5f5;
+    padding-left: 10px;
+    color: #555555;
+}
+
+.content .search-about .search-object .search-input:focus {
+    outline: none;
+}
+
+.content .search-about .search-object .search-button {
+    /* width: 15%; */
+    min-width: 20%;
+    background-color: #444444;
+    color: #fff;
+}
+
+.content .search-about .search-object .search-button:focus {
+    outline: none;
+}
+
+.content .one-saying {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 100px;
+    color: #fafaff;
+}
+
+.content .one-saying .one-content {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.content .one-saying .one-from {
+    align-self: center;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.content .one-saying .like-it {
+    align-self: center;
+    margin-top: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.content .one-saying .next {
+    align-self: center;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* 底部样式 */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    width: 100%;
+    font-size: 12px;
+}
+
+.footer .links {}
+
+.footer .links ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.footer .links ul li {
+    margin-right: 10px;
+}

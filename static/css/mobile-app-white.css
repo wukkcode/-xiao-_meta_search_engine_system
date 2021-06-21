@@ -1,0 +1,127 @@
+body {
+    margin: 0 auto;
+    background-color: #f4f5f9;
+    width: 90%;
+}
+
+/* 头部样式 */
+
+.header {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.header .app {
+    display: flex;
+}
+
+.header .app .app-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: #1e6fff;
+    border-radius: 10px;
+    font-size: 55px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.header .app .app-description {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header .app .app-description .app-name {
+    font-weight: 400;
+    color: #0b0c0b;
+}
+
+.header .app .app-description p {
+    color: #a0a4af;
+}
+
+.header .theme-switcher {
+    position: relative;
+    display: flex;
+    height: 24px;
+    width: 44px;
+    background-color: #e0e0e0;
+    border-radius: 22px;
+    align-items: center;
+    transition: all 0.7s ease 0s;
+}
+
+.header .theme-switcher .theme-circle {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #555555;
+    transition: all 0.7s ease 0s;
+    left: 0px;
+}
+
+/* 内容样式 */
+
+.content {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.content .product-items {
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.content .product-items li {
+    width: 48%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+
+.content .product-items li .product-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #1e6fff;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+.content .product-items li .product-name {
+    margin-bottom: 5px;
+    font-weight: 400;
+    color: #0b0c0b;
+    letter-spacing: 2px;
+}
+
+.content .product-items li .product-description {
+    font-size: 12px;
+    color: #a0a4af;
+}
+
+/* 底部样式 */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: 20px auto;
+}

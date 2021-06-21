@@ -1,0 +1,138 @@
+ * {
+     transition: all 0.7s ease 0s;
+ }
+
+ body {
+     background-color: #1c1c20;
+     color: #DCDCE0;
+ }
+
+ a {
+     color: #DCDCE0;
+ }
+
+ a:hover {
+     color: #14a2f5;
+ }
+
+ /* 头部样式 */
+
+ .header {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin: 20px 20px 0 20px;
+ }
+
+ .header .logo {
+     cursor: pointer;
+ }
+
+ .header .one-poem {
+     font-size: 16px;
+ }
+
+ .header .theme-switcher {
+     position: relative;
+     display: flex;
+     height: 24px;
+     width: 44px;
+     background-color: #e0e0e0;
+     border-radius: 22px;
+     align-items: center;
+     transition: all 0.7s ease 0s;
+ }
+
+ .header .theme-switcher .theme-circle {
+     position: absolute;
+     height: 16px;
+     width: 16px;
+     border-radius: 50%;
+     background-color: #555555;
+     transition: all 0.7s ease 0s;
+     left: 0px;
+ }
+
+ /* 今日部分样式 */
+
+ .today {
+     display: flex;
+     margin: 50px auto;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .today .more {
+     margin-right: 5px;
+     font-size: 50px;
+     font-weight: 400;
+ }
+
+ .today .title {
+     font-size: 50px;
+     font-weight: 400;
+ }
+
+ .today .info {
+     margin-left: 5px;
+ }
+
+ /* 内容样式 */
+
+ .content {
+     margin: 60px auto;
+     width: 80%;
+     background-color: #26262a;
+     border-radius: 5px;
+ }
+
+ .content .hot-news {
+     width: 90%;
+     margin: 20px auto;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .content .hot-news li {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 20px;
+     font-size: 18px;
+     border-bottom: 1px solid #555555;
+     padding-bottom: 20px;
+ }
+
+ .content .hot-news li:last-child {
+     margin-bottom: 10px;
+ }
+
+ .content .hot-news li a {
+     flex: 6;
+     font: 16px;
+     max-width: 80%;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+ }
+
+ .content .hot-news li p:nth-child(1) {
+     flex: 1;
+     margin-left: 20px;
+     text-align: left;
+ }
+
+ .content .hot-news li:nth-child(-n+10) p:nth-child(1) {
+     color: #f07c82;
+ }
+
+ .content .hot-news li *:nth-child(3) {
+     /* display: flex;
+            justify-content: center; */
+     flex: 2;
+     text-align: right;
+ }
+
+ .content .hot-news li *:nth-child(4) {
+     flex: 2;
+     text-align: right;
+ }

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/static/logo.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>晓搜</title>
+    <link rel="stylesheet" href="/static/css/normalize.css">
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/bing-result-white.css" id="style-switch">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="search-about">
+            <div class="search-object">
+                <a href="/">
+                    <h1 class="logo">XIAO[S]</h1>
+                </a>
+                <input type="text" class="search-input" placeholder="你的问题 / 知识获取" value="">
+                <button class="search-button">搜一下</button>
+            </div>
+            <ul class="search-type">
+                <li><span>综合</span></li>
+                <li><span>必应</span></li>
+                <li><span>百度</span></li>
+                <li><span>搜狗</span></li>
+                <li><span>360</span></li>
+                <li><span>谷歌</span></li>
+                <li><span>|</span></li>
+                <li><a href="/science/"><span>学术</span></a></li>
+                <li><a href="/translate/"><span>翻译</span></a></li>
+                <li><a href="/hotnews/"><span>热点</span></a></li>
+                <li><a href="/epidemic/"><span style="color: #f07c82; font-weight: 700;">关心疫情</span></a></li>
+            </ul>
+        </div>
+        <div class="action-about">
+            <div class="theme-switcher">
+                <div class="theme-circle"></div>
+            </div>
+            <h3 class="login"></h3>
+        </div>
+    </header>
+    <div class="all">
+        <div class="content">
+            <div class="left">
+                <div class="search-result">
+                    <ul>
+
+                    </ul>
+                    <button id="previous">上一页</button>
+                    <button id="next">下一页</button>
+                </div>
+            </div>
+            <div class="right">
+                <div class="info">
+                    <h2>本次搜索关键词：Python</h2>
+                    <section class="result-compare">
+                        <p></p>
+                        <p></p>
+                    </section>
+                </div>
+                <div class="result-chart">
+                </div>
+                <div class="switch-chart">
+                    <button class="pie-chart">饼图</button>
+                    <button class="histogram-chart">柱状图</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="copyright">© 2021 晓搜索</div>
+        <div class="slogan">晓之以理，动之以情</div>
+        <div class="record">京ICP备19023111号-1</div>
+        <div class="links">
+            <ul>
+                <li><a href="#">项目的诞生</a></li>
+                <li><a href="#">关于作者</a></li>
+                <li><a href="#">联系作者</a></li>
+                <li><a href="#">作者博客</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+    <script src="/static/js/dark-chart.js/"></script>
+    <script src="/static/js/search-result.js"></script>
+</body>
+
+</html>

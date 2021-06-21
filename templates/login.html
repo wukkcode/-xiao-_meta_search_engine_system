@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/static/logo.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录晓</title>
+    <link rel="stylesheet" href="/static/css/normalize.css">
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/login-white.css" id="style-switch">
+</head>
+<body>
+    <header class="header">
+            <h3 class="home"><a href="/">主页</a></h3>
+            <div class="theme-switcher">
+                <div class="theme-circle"></div>
+            </div>
+    </header>
+    <div class="content">
+        <div class="login-box">
+            <h2>登录晓</h2>
+            <form action="/login/" method="POST">
+                <input type="text" class="username" placeholder="用户名: 4~8位" name="username" value="">
+                <input type="text" class="password" placeholder="密码: 4~8位" name="password" value="">
+                <input type="button" value="登录" class="submit-button">
+                <p class="tips">还没有账号，点击 <span class="state-switch">注册</span></p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="copyright">© 2021 晓搜索</div>
+        <div class="slogan">晓之以理，动之以情</div>
+        <div class="record">京ICP备19023111号-1</div>
+        <div class="links">
+            <ul>
+                <li><a href="#">项目的诞生</a></li>
+                <li><a href="#">关于作者</a></li>
+                <li><a href="#">联系作者</a></li>
+                <li><a href="#">作者博客</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="/static/js/login.js"></script>
+</body>
+</html>
